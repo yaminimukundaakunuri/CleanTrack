@@ -11,27 +11,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   
-  <!-- Leaflet CSS (Local first with fallback) -->
-  <link rel="stylesheet" href="/static/vendor/leaflet.css" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="./frontend/vendor/leaflet.css" onerror="this.onerror=null;this.href='./vendor/leaflet.css';if(!this.href)this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';" />
   
-  <!-- CleanTrack Design System (Green & White) -->
-  <link rel="stylesheet" href="/static/style.css" />
+  <!-- CleanTrack Design System (Green & White Theme) -->
+  <link rel="stylesheet" href="./frontend/style.css" onerror="this.onerror=null;this.href='./style.css';" />
 </head>
 <body>
   <!-- Root React Mount Node -->
   <div id="root"></div>
 
-  <!-- Leaflet JS (Local first with CDN fallback) -->
-  <script src="/static/vendor/leaflet.js" onerror="this.onerror=null;this.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';"></script>
+  <!-- Leaflet JS -->
+  <script src="./frontend/vendor/leaflet.js" onerror="this.onerror=null;this.src='./vendor/leaflet.js';if(!this.src)this.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';"></script>
   
-  <!-- React 18 & ReactDOM (Local first with CDN fallback) -->
-  <script src="/static/vendor/react.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/react@18/umd/react.production.min.js';"></script>
-  <script src="/static/vendor/react-dom.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js';"></script>
+  <!-- React 18 & ReactDOM -->
+  <script src="./frontend/vendor/react.min.js" onerror="this.onerror=null;this.src='./vendor/react.min.js';if(!this.src)this.src='https://unpkg.com/react@18/umd/react.production.min.js';"></script>
+  <script src="./frontend/vendor/react-dom.min.js" onerror="this.onerror=null;this.src='./vendor/react-dom.min.js';if(!this.src)this.src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js';"></script>
   
-  <!-- Babel Standalone (Local first with CDN fallback) -->
-  <script src="/static/vendor/babel.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/@babel/standalone/babel.min.js';"></script>
+  <!-- Babel Standalone for JSX interpretation -->
+  <script src="./frontend/vendor/babel.min.js" onerror="this.onerror=null;this.src='./vendor/babel.min.js';if(!this.src)this.src='https://unpkg.com/@babel/standalone/babel.min.js';"></script>
 
   <!-- CleanTrack Main React Component -->
-  <script type="text/babel" src="/static/app.jsx"></script>
+  <script type="text/babel" src="./frontend/app.jsx" onerror="this.onerror=null;this.src='./app.jsx';"></script>
 </body>
 </html>

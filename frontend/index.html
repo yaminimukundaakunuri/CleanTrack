@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanTrack - Ward-Level Waste Pickup Reliability Tracker | Vijayawada</title>
+  <meta name="description" content="Geospatial waste monitoring platform correlating municipal schedules, vehicle GPS logs, and geotagged citizen complaints with operator verification workflows in Vijayawada." />
+  
+  <!-- Modern Typography (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Leaflet CSS (Relative path for GitHub Pages / local / server, with CDN fallback) -->
+  <link rel="stylesheet" href="./vendor/leaflet.css" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';" />
+  
+  <!-- CleanTrack Design System (Green & White Theme) -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Root React Mount Node -->
+  <div id="root"></div>
+
+  <!-- Leaflet JS -->
+  <script src="./vendor/leaflet.js" onerror="this.onerror=null;this.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';"></script>
+  
+  <!-- React 18 & ReactDOM -->
+  <script src="./vendor/react.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/react@18/umd/react.production.min.js';"></script>
+  <script src="./vendor/react-dom.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/react-dom@18/umd/react-dom.production.min.js';"></script>
+  
+  <!-- Babel Standalone for JSX interpretation -->
+  <script src="./vendor/babel.min.js" onerror="this.onerror=null;this.src='https://unpkg.com/@babel/standalone/babel.min.js';"></script>
+
+  <!-- CleanTrack Main React Component -->
+  <script type="text/babel" src="./app.jsx"></script>
+</body>
+</html>

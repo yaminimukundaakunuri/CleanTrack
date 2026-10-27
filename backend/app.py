@@ -477,4 +477,8 @@ def serve_frontend_root():
     index_path = os.path.join(FRONTEND_DIR, "index.html")
     if os.path.exists(index_path):
         return FileResponse(index_path)
-    return PlainTextResponse("CleanTrack API is running. Frontend index.html not yet built.")
+    return PlainTextResponse("CleanTrack API is running.")
+
+# Mount frontend directory to serve ./app.jsx, ./style.css, ./vendor/... directly at root
+if os.path.exists(FRONTEND_DIR):
+    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend_root")
