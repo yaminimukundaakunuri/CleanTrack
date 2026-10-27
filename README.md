@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CleanTrack: Ward-Level Waste Pickup Reliability Tracker
 
 **CleanTrack** is a modern geospatial waste monitoring and reliability tracking platform built for municipal corporations (customized for **Vijayawada, Andhra Pradesh**). It correlates municipal schedules against GPS logs and geotagged citizen complaints with operator verification workflows.
@@ -90,3 +91,7 @@ CleanTrack/
 ├── run.py                    # One-command application launcher
 └── README.md
 ```
+=======
+# CleanTrack
+CleanTrack is a ward-level waste pickup reliability tracker that helps municipalities monitor collection performance, track citizen complaints, identify recurring failure hotspots, and manage route disruptions through a centralized dashboard.
+>>>>>>> 6c82116766ebcc30750e36a4d867b89f17712d7c
